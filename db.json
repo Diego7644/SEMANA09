@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Primer mensaje",
+      "body": "Contenido de prueba"
+    },
+    {
+      "title": "Ingineirqf",
+      "body": "qqrfqfqr",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "wegfrhregtw",
+      "body": "get35yytg45y",
+      "userId": 1,
+      "id": 3
+    }
+  ]
+}

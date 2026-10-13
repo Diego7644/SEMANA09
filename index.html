@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicador de mensajes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Publicador de mensajes</h1>
+
+    <form id="formulario-publicacion" novalidate>
+      <div class="campo">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Escribe el título" autocomplete="off">
+      </div>
+
+      <div class="campo">
+        <label for="contenido">Contenido</label>
+        <textarea id="contenido" name="contenido" rows="5" placeholder="Escribe el contenido de tu publicación"></textarea>
+      </div>
+
+      <button type="submit" id="btn-publicar">Publicar</button>
+    </form>
+
+    <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+
+    <section id="resultado" class="resultado" hidden>
+      <h2>Respuesta de la API</h2>
+      <dl>
+        <dt>ID asignado</dt>
+        <dd id="resultado-id"></dd>
+        <dt>Título</dt>
+        <dd id="resultado-titulo"></dd>
+        <dt>Contenido</dt>
+        <dd id="resultado-contenido"></dd>
+        <dt>Ver en el servidor</dt>
+        <dd><a id="resultado-enlace" href="#" target="_blank" rel="noopener"></a></dd>
+      </dl>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
